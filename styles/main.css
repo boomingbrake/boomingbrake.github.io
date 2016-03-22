@@ -1,0 +1,3 @@
+.resume img:last-child{display:none}
+.resume:hover img:first-child{display:none}
+.resume:hover img:last-child{display:inline-block}

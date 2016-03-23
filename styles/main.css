@@ -1,3 +1,10 @@
 .resume img:last-child{display:none}
 .resume:hover img:first-child{display:none}
 .resume:hover img:last-child{display:inline-block}
+
+
+/*box-sizing:border-box*/
+
+@media (min-width: 30em){
+
+}

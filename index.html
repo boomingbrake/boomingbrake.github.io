@@ -8,8 +8,7 @@
 </head>
 
 <body>
-
-  <header>
+  <header role="banner">
     <h1>Hi, I am Brittany.</h1>
     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.75 78.73">
       <title>bew</title>
@@ -20,73 +19,103 @@
       <path d="M181.06,257.15c1.2-3,2.54-6.35,4.92-8.68,2.65-2.59,5.94-2.66,9.41-2.35,6.5,0.58,14.21,2,15.85,9.45,1.45,6.65-1.16,14.44-5,19.84a20.06,20.06,0,0,1-5,5.15c-1.65,1.07-7.14,3-8.44,0l1.31-5.73a7.66,7.66,0,0,1,2.62-.32,15.41,15.41,0,0,1,4.7.86c7,2.17,15.29,6,15.38,14.42,0.07,6.42-3.54,12.81-8,17.17a26.13,26.13,0,0,1-17.5,7.56c-8.2.13-16.1-5.25-15.66-14.08,0.1-1.93-2.9-1.92-3,0a16.13,16.13,0,0,0,11.22,16c7.64,2.61,16.33.53,22.87-3.9,11.83-8,19.72-27.37,4.56-36.1-5.08-2.92-13.52-7.08-19.36-3.9-5.12,2.79-3.67,9.54,1.1,11.85,6.82,3.3,13.44-3.55,16.75-8.77,4-6.34,6.59-15.73,3.76-23-3-7.59-11.64-9-18.84-9.53-9.28-.69-13.31,5.41-16.45,13.3-0.71,1.79,2.19,2.57,2.89.8h0Z"
         transform="translate(-172.54 -238.82)" />
     </svg>
-
-    <nav>
-      <h2>Navigation</h2>
-      <ul>
-        <li>About Me</li>
-        <li>Resume</li>
-        <li>Random Bits of Knowledge</li>
-        <li>Projects</li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <section class="about_me_summary">
+  <nav role="navigation">
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+
+    <section id="about_me" class="summary">
       <h2>About Me</h2>
       <img src="" alt="Hi! I'm Brittany" />
-      <a href="mailto:brittanywebbe@gmail.com">Contact Me</a>
       <p>
-        Hey! I’m Brittany, a developer currently based in Dayton, OH. I’ve been an .NET application developer for almost 5 years. I studied Computer Information Systems in school, and currently an apprentice at Sparkbox expanding my web specific development skill
-        set. I have experience in front-end development, as well as back-end/server-side development, UX, database, and system conversion and maintenance.
+        Hey! I’m Brittany, a developer currently based in Dayton, OH. I’ve been an .NET application developer for almost 5 years. I studied Computer Information Systems in school, and currently an apprentice at <a href="heysparkbox.com">Sparkbox</a> expanding
+        my web specific development skill set. I have experience in front-end development, as well as back-end/server-side development, UX, database, and system conversion and maintenance.
       </p>
-      <ul>
-        <li>
-          Writes clean, semantic, responsive code.
-        </li>
-        <li>
-          Proven ability to adapt and learn new skill sets.
-        </li>
-        <li>
-          Excellent interpersonal and communication skills.
-        </li>
-        <li>
-          Capabable of meeing deadlines in a fast paces environment.
-        </li>
-        <li>
-          Can follow instuctions and act with minimal guidance.
-        </li>
-        <li>
-          Team player who is not afraid to take initiative and step into a leadership role.
-        </li>
-        <li>
-          Takes pride in problem-solving skills.
-        </li>
-      </ul>
+      <section class="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>hiking</li>
+          <li>fitness</li>
+          <li>reading</li>
+          <li>volunteering</li>
+        </ul>
+      </section>
     </section>
+
 
     <section class="resume">
-      <h2>Resume</h2>
-        <img src="images/resume-01.png" />
-        <img src="images/resume-02.png" />
-      <a href="resume.docx">Download</a>
+      <section class="qualities">
+        <h2>Qualites</h2>
+        <ul>
+          <li>
+            Writes clean, semantic, responsive code.
+          </li>
+          <li>
+            Proven ability to adapt and learn new skill sets.
+          </li>
+          <li>
+            Excellent interpersonal and communication skills.
+          </li>
+          <li>
+            Capabable of meeing deadlines in a fast paces environment.
+          </li>
+          <li>
+            Can follow instuctions and act with minimal guidance.
+          </li>
+          <li>
+            Team player who is not afraid to take initiative and step into a leadership role.
+          </li>
+          <li>
+            Takes pride in problem-solving skills.
+          </li>
+        </ul>
+      </section>
+      <section class="technologies">
+        <h2>Technologies</h2>
+        <ul class="professional_skills">
+          <li>ASP.NET MVC</li>
+          <li>C#</li>
+          <li>JAVASCRIPT</li>
+          <li>COFFEESCRIPT</li>
+          <li>JQUERY</li>
+          <li>AJAX</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>SASS</li>
+          <li>SQL</li>
+          <li>LINQ</li>
+          <li>KNOCKOUT JS</li>
+          <li>BOOTSTRAP</li>
+          <li>RUBY</li>
+          <li>RUBY ON RAILS</li>
+          <li>GIT</li>
+        </ul>
+      </section>
+
+      <section class="work_experience">
+        <h2>Work Experience</h2>
+
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+      </section>
+
     </section>
 
-    <section class="quote">
-      <h2>Random Life Knowledge</h2>
-      <blockquote>
-        <p>
-          Nobody gets in to see the wizard. Not nobody.
-        </p>
-        <footer>
-          -<cite>L. Frank Baum, The Wonderful Wizard of Oz</cite>
-        </footer>
-      </blockquote>
-    </section>
 
-    <section class="projects">
+    <section id="projects">
       <h2>Projects</h2>
+
       <section class="election_reporting">
         <h2>Live Election Night Reporting</h2>
         <figure>
@@ -97,6 +126,7 @@
           <img src="" alt="Bootstrap">
         </figcaption>
       </section>
+
       <section class="trailseek">
         <h2>I am half of Trail Seek</h2>
         <figure>
@@ -111,15 +141,19 @@
   </main>
 
   <footer>
-    <section class="contact">
-      <h2>Contact Me!</h2>
-    </section>
-    <section class="page_details">
+
+    <address id="contact">
+      <a href="mailto:brittanywebbe@gmail.com">Contact Me</a>
+    </address>
+
+    <section role="contentinfo" class="page_details">
       <h2>Page Technologies</h2>
       <img src="images/CSS3_HTML5_badges.svg" alt="Site built to Html5 CSS3 standards" />
       <img src="images/github.svg" alt="GitHub Site" />
     </section>
+
   </footer>
+
 </body>
 
 </html>

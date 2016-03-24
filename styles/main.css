@@ -1,6 +1,19 @@
-.resume img:last-child{display:none}
-.resume:hover img:first-child{display:none}
-.resume:hover img:last-child{display:inline-block}
+#election_reporting {
+  position:relative;
+}
+
+#election_reporting img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#election_reporting img.top:hover {
+  opacity:0;
+}
 
 
 /*box-sizing:border-box*/

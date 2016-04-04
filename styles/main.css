@@ -11,9 +11,6 @@ body {
 a {
   text-decoration: none;
 }
-img {
-  max-width: 100%
-}
 
 
 .header {
@@ -39,14 +36,14 @@ img {
   position: relative;
   padding: 0 2%;
 }
-.logo {
+.nav__logo {
   font-size: 25px;
   color: #8f8f8f;
   text-transform: uppercase;
   float: none;
 }
 @media only screen and (min-width:20em) {
-  .logo {
+  .nav__logo {
     float: left;
   }
 }
@@ -83,11 +80,9 @@ img {
   font-size: 2em;
   text-transform: uppercase;
   text-align: center
-
 }
 .banner {
   position: relative;
-  background: #333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -96,6 +91,7 @@ img {
   padding-top: 7em;
   min-height: 32em;
   letter-spacing: 2px;
+  width: 100%;
 }
 .open-nav {
   max-height: 400px !important;
@@ -161,6 +157,13 @@ img {
     transform: translateY(20px);
   }
 }
+
+.hobbies__ul{
+  list-style: none;
+}
+.hobbies__li{
+  display: inline;
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -176,6 +179,7 @@ img {
 .work_experience {
   order: 3;
   flex-basis: 100%;
+  text-align: center;
 }
 .education {
   order: 4;
@@ -188,9 +192,41 @@ img {
   width: 60px;
 }
 
+.election_reporting{
+  order: 1;
+  flex-basis: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.trailseek{
+  order: 2;
+  flex-basis: 50%;
+  text-align: center;
+  position:relative;
+}
+
+.social_media{
+  order: 1;
+  flex-basis: 50%;
+  text-align: center;
+  position:relative;
+}
+.page_details{
+  order: 2;
+  flex-basis: 50%;
+  text-align: center;
+  position:relative;
+}
+
+
+.project__img {
+   position: relative;
+   width: 100%;
+}
+
 .footer{
     position: relative;
-    background: #333;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

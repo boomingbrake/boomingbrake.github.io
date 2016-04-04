@@ -14,7 +14,7 @@
 
   <header class="header">
     <div class="nav-container">
-      <h1><a class="logo" href="#banner">Hi, I am Brittany.</a></h1>
+      <h1><a class="nav__logo" href="#banner">Hi, I am Brittany.</a></h1>
 
       <nav class="navigation" role="navigation" title="Navigation">
         <a class="navigation__link" href="#about_me">About Me</a>
@@ -55,12 +55,12 @@
       </p>
       <section class="hobbies">
         <h2>Hobbies</h2>
-        <ul>
-          <li>travelling</li>
-          <li>hiking</li>
-          <li>fitness / running / cycling</li>
-          <li>volunteering</li>
-          <li>painting / poetry / crafting</li>
+        <ul class="hobbies__ul">
+          <li class="hobbies__li">travelling</li>
+          <li class="hobbies__li">hiking</li>
+          <li class="hobbies__li">fitness / running / cycling</li>
+          <li class="hobbies__li">volunteering</li>
+          <li class="hobbies__li">painting / poetry / crafting</li>
         </ul>
       </section>
     </section>
@@ -133,48 +133,44 @@
 
     <section id="projects" class="projects">
       <h2 class="section_header">Projects</h2>
+      <div class="flex-container">
 
-      <section class="election_reporting">
-        <h2>Live Election Night Reporting</h2>
-        <figure>
-          <img src="images/ENR.png" alt="Election Night Report Screenshot" />
-          <img src="images/responsiveENR.png" alt="Election Night Report Responsive made by utlizing knockout and bootstrap" />
-        </figure>
-        <figcaption>
-          Built responsive frontend utilizing bootstrap and knockout js's templates and observables.
-        </figcaption>
-      </section>
 
-      <section class="trailseek">
-        <h2>I am half of Trail Seek</h2>
-        <figure>
-          <img src="images/trailseek.png" alt="Trail Seek" />
-        </figure>
-        <figcaption>
-          <a href="http://www.trailseek.net" target="_blank">trail seek</a>
-          <a href="https://www.instagram.com/trailseek/" target="_blank">Instagram</a>
-        </figcaption>
-      </section>
+        <section class="election_reporting">
+          <h2>Live Election Night Reporting</h2>
+          <p>
+              Built responsive frontend utilizing bootstrap and knockout js's templates and observables.
+          </p>
+            <img class="er__image1" src="images/ENR.png" alt="Election Night Report Screenshot" />
+        </section>
+
+        <section class="trailseek">
+          <h2>I am half of <a href="http://www.trailseek.net" target="_blank">Trail Seek</a></h2>
+            <img class="er__image1" src="images/trailseek.svg" alt="Trail Seek" />
+        </section>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <address id="contact_me">
-      <h2><a href="mailto:brittanywebbe@gmail.com">Contact Me</a></h2>
+    <address class="section_header" id="contact_me">
+      <a class="section_header__link" href="mailto:brittanywebbe@gmail.com">Contact Me</a></h2>
     </address>
+<div class="flex-container">
+  <section class="social_media">
+    <h2>Find me out there</h2>
+    <a href="http://www.twitter.com/boomingbrake" target="_blank">Twitter</a>
+    <a href="http://www.instagram.com/boomingbrake" target="_blank">Instagram</a>
+    <a href="http://www.github.com/boomingbrake" target="_blank">GitHub</a>
+  </section>
 
-    <section>
-      <h2>Find me out there</h2>
-      <a href="http://www.twitter.com/boomingbrake" target="_blank">Twitter</a>
-      <a href="http://www.instagram.com/boomingbrake" target="_blank">Instagram</a>
-      <a href="http://www.github.com/boomingbrake" target="_blank">GitHub</a>
-    </section>
+  <section role="contentinfo" class="page_details">
+    <h2>Page Technologies</h2>
+    <img src="images/CSS3_HTML5_badges.svg" alt="Built using Html5 CSS3 standards" />
+    <img src="images/github.svg" alt="GitHub Hosted Site" />
+  </section>
+</div>
 
-    <section role="contentinfo" class="page_details">
-      <h2>Page Technologies</h2>
-      <img src="images/CSS3_HTML5_badges.svg" alt="Built using Html5 CSS3 standards" />
-      <img src="images/github.svg" alt="GitHub Hosted Site" />
-    </section>
   </footer>
 
 </body>

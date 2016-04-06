@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Lato', sans-serif;
   margin: 0 auto;
@@ -10,10 +11,11 @@ body {
 }
 a {
   text-decoration: none;
+  color: #03f;
 }
+a:hover {color: #69f;}
 h2 {
   font-size: 3em;
-  /* 30px/10px */
   font-weight: bold;
 }
 .header {

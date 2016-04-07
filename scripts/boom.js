@@ -27,7 +27,7 @@ $(document).ready(function() {
   });
 
 
-  $('.navigation__link').click(function(event) {
+  $('.nav_jump').click(function(event) {
     var id = $(this).attr("href");
     var offset = 70;
     var target = $(id).offset().top - offset;

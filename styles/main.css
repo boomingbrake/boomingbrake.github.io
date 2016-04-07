@@ -130,7 +130,7 @@ a {
 .open-nav {
   max-height: 400px !important;
 }
-.open-nav .mobile-toggle {
+.open-nav .nav-toggle {
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
 }
@@ -140,7 +140,7 @@ a {
   top: 0px;
   border-bottom: 1px solid gainsboro;
 }
-.mobile-toggle {
+.nav-toggle {
   display: none;
   cursor: pointer;
   font-size: 20px;
@@ -153,11 +153,11 @@ a {
   transition: all 200ms ease-in;
 }
 @media only screen and (max-width: 766px) {
-  .mobile-toggle {
+  .nav-toggle {
     display: block;
   }
 }
-.mobile-toggle span {
+.nav-toggle span {
   width: 30px;
   height: 4px;
   margin-bottom: 6px;

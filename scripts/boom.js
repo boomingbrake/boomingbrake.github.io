@@ -10,8 +10,8 @@ $(document).ready(function() {
     }
   });
 
-  // Mobile Navigation
-  $('.mobile-toggle').click(function() {
+  // Nave Navigation
+  $('.nav-toggle').click(function() {
     if ($('.header').hasClass('open-nav')) {
       $('.header').removeClass('open-nav');
     } else {

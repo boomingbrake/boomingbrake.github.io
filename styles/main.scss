@@ -42,13 +42,13 @@ p{
     display: inline-block;
     flex: 1;
     padding: 0 1em;
-    min-width: 20em;
     font-size: 1.25em;
     line-height: 2em;
 }
 @media (min-width:30em) {
     .l-flex__container {
         padding: 0 3em;
+        min-width: 20em;
     }
 }
 

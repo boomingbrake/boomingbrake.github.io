@@ -1,102 +1,105 @@
-body {
-  margin: 0 auto;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  color: #999999;
-  background: white; }
-
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: auto;
+  font-family: 'Oswald', sans-serif;
+  color: #999999;
+  background: #FFFFFF; }
+
+main {
+  padding: 0 1em; }
 
 a {
   text-decoration: none;
   color: #333333; }
+  a:hover {
+    color: #999999; }
 
 ul {
-  margin: 0 auto; }
+  list-style: none;
+  display: inline; }
 
-h2 {
+h2, .header--opened, .header--closed, .pulled, .closed {
   color: #333333;
-  font-size: 1.75rem; }
+  font-size: 1.5rem; }
 
-.l-max-width {
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  max-width: 100rem; }
+h3 {
+  margin-bottom: 0; }
 
-.l-flex__container {
-  padding: 0 1em;
-  font-size: 1.1em;
-  line-height: 2em;
-  max-width: 40em; }
-
-@media (min-width: 30em) {
-  .l-flex__container {
-    padding: 0 3em;
-    min-width: 30em;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1; } }
-
-.header {
+.header__tab {
   position: fixed;
-  z-index: 999;
-  top: -100px;
-  width: 100%;
-  background: none;
-  overflow: hidden;
-  transition: all 0.3s;
-  opacity: 0; }
-
-.header--hover {
-  top: 0px;
-  background-color: rgba(255, 255, 255, 0.93);
-  opacity: 1;
-  border-bottom: 1px solid #DCDCDC; }
-
-.banner {
-  position: relative;
-  min-height: 32em;
-  width: 100%;
-  height: 100%;
+  top: 1em;
+  left: 1em;
+  padding: .5em;
   text-align: center;
-  color: #fff;
-  transition: .3s ease-in-out; }
+  background-color: #FFFF00;
+  color: #000000;
+  border-radius: 0 0 1em 1em; }
+  .header__tab:hover {
+    color: #FFFFFF; }
+
+.header--opened {
+  transition: top ease-in .8s;
+  top: 250px; }
+  .header--opened:after {
+    content: "Less"; }
+
+.header--closed {
+  transition: top ease-in .8s;
+  top: 0px; }
+  .header--closed:after {
+    content: "More"; }
+
+.header__img {
+  position: fixed;
+  padding: 1em;
+  height: 250px;
+  background-color: #FFFFFF;
+  border-bottom: 0.75em solid #FFFF00;
+  top: -250px;
+  width: 100%;
+  transition: top ease-in .8s; }
+
+.main__container {
+  max-width: 70em;
+  margin: auto; }
 
 .section_header {
   width: 100%;
-  font-size: 4em;
+  font-size: 6em;
   text-transform: uppercase;
-  text-align: right; }
+  text-align: right;
+  margin: 0; }
 
 @media (min-width: 30em) {
   .section_header {
-    font-size: 6em; } }
+    font-size: 5em; } }
+
+.intro-text {
+  line-height: 2em;
+  padding-bottom: 2em; }
+
+.section__container {
+  display: inline-block;
+  font-size: 1em;
+  width: 16em;
+  vertical-align: top; }
+
+.padding--top {
+  padding-top: .5em; }
 
 .social-icon {
   display: inline-block;
   height: 2em;
   width: 2em;
-  margin-right: .5em;
+  margin-right: .25em;
   transition: fill .1s;
   fill: #000000; }
   .social-icon:hover {
-    fill: #999999;
-    border-color: #333333;
-    border-width: thin;
-    border-radius: 50%; }
-
-@media (min-width: 45em) {
-  .social-icon {
-    display: inline-block;
-    height: 3em;
-    width: 3em;
-    margin-right: 1.5em; } }
+    fill: #999999; }
 
 .bounce:hover {
   -webkit-animation-duration: 1s;
@@ -128,25 +131,49 @@ h2 {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-.trail-seek__img {
-  width: 100%;
-  height: 100%;
-  max-width: 14em;
-  max-height: 14em; }
+.extra--tab {
+  position: fixed;
+  right: 0;
+  bottom: 1em;
+  padding: .6em;
+  text-align: center;
+  background-color: #FFFF00;
+  color: #000000;
+  border-radius: 1em 0 0 1em; }
+  .extra--tab:hover {
+    color: #FFFFFF; }
 
-.footer {
+.pulled {
+  transition: right ease-in .8s;
+  right: 250px; }
+
+.pulled:after {
+  content: "Less"; }
+
+.closed {
+  transition: right ease-in .8s;
+  right: 0px; }
+
+.closed:after {
+  content: "More"; }
+
+.more-stuff {
+  position: fixed;
+  padding: 1em;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-left: 0.75em solid #FFFF00;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  transition: right ease-in .8s; }
+
+footer {
   position: relative;
   text-align: center;
-  margin: 1em auto;
-  color: #999999;
-  padding-top: 4em; }
-  .footer p {
-    margin-right: 2em;
-    display: inline; }
-
-.page_details {
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  margin-left: 0.50em;
-  background: url("../images/github.svg") no-repeat; }
+  color: #999999; }
+  footer p {
+    margin-right: 2em; }
+    footer p img {
+      height: 1em;
+      width: 1em; }

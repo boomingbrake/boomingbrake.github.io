@@ -1,3 +1,5 @@
+
+
 $header-txt-color: #333333;
 $title-txt-color: #333333;
 $basic-txt-color: #999999;
@@ -5,13 +7,14 @@ $black: #000000;
 $yellow: #FFFF00;
 $white: #FFFFFF;
 
+@import 'tab';
+
 * {
     box-sizing: border-box;
     margin:0;
     padding: 0;
 }
 body {
-    margin: auto;
     font-family: 'Oswald', sans-serif;
     color: $basic-txt-color;
     background: $white;
@@ -31,76 +34,36 @@ ul {
     list-style: none;
     display: inline;
 }
-h2 {
-    color: $title-txt-color;
-    font-size: 1.5rem;
-}
 h3{
   margin-bottom:0;
 }
-
-.header__tab{
-  position:fixed;
-  top:1em;
-  left:1em;
-  padding: .5em;
-  text-align:center;
-  background-color: $yellow;
-  color: $black;
-  border-radius:0 0 1em 1em;
-  &:hover{
-    color:$white;
-  }
+section{
+  padding:1em 0;
 }
-
-.header--opened{
-  transition: top ease-in .8s;
-  top: 250px;
-  @extend h2;
-  &:after{
-    content:"Less";
-  }
-}
-.header--closed{
-  transition: top ease-in .8s;
-  top: 0px;
-  @extend h2;
-  &:after{
-    content:"More";
-  }
-}
-
-.header__img{
-  position:fixed;
-  padding: 1em;
-  height:250px;
-  background-color: $white;
-  border-bottom: .75em solid $yellow;
-  top:-250px;
-  width:100%;
-  transition: top ease-in .8s;
-}
-
-
 .main__container{
   max-width: 70em;
   margin:auto;
 }
-.section_header {
+.main__head {
     width: 100%;
     font-size: 6em;
     text-transform: uppercase;
     text-align: right;
     margin:0;
+    color:$black;
 }
 @media (min-width:30em) {
-  .section_header {
+  .main__head {
       font-size: 5em;
   }
 }
 .intro-text{
   line-height: 2em;
   padding-bottom: 2em;
+}
+.section__head {
+    color: $title-txt-color;
+    font-size: 1.5rem;
 }
 .section__container {
     display: inline-block;
@@ -140,47 +103,6 @@ h3{
     }
 }
 
-.extra--tab{
-  position:fixed;
-  right:0;
-  bottom:1em;
-  padding:.6em;
-  text-align:center;
-	background-color: $yellow;
-  color: $black;
-	border-radius:1em 0 0 1em;
-  &:hover{
-    color:$white;
-  }
-}
-.pulled{
-  transition: right ease-in .8s;
-  right: 250px;
-  @extend h2;
-}
-.pulled:after{
-  content:"Less";
-}
-.closed{
-  transition: right ease-in .8s;
-  right: 0px;
-  @extend h2;
-}
-.closed:after{
-  content: "More";
-}
-
-.more-stuff{
-  position:fixed;
-  padding: 1em;
-  height:100%;
-  background-color: $white;
-  border-left: .75em solid $yellow;
-  top:0;
-  right:-250px;
-  width:250px;
-  transition: right ease-in .8s;
-}
 
 footer {
     position: relative;

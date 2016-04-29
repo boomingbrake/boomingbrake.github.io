@@ -14,4 +14,5 @@ gulp.task('css', function(){
 
 gulp.task('default', () =>{
   gulp.watch('./styles/main.scss', ['css']);
+  gulp.watch('./styles/_tab.scss', ['css']);
 });

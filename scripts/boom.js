@@ -1,29 +1,27 @@
 $(document).ready(function() {
-
-  $("#extraTab").click(function() {
-    if ($(this).hasClass("pulled")) {
-      $(this).addClass("closed").removeClass("pulled")
-      $("#moreStuff").css({
-        'right': "-250px"
-      })
-    } else {
-      $(this).removeClass("closed").addClass("pulled")
-      $("#moreStuff").css({
-        'right': "0px"
-      })
-    }
-  });
-
-  $("#headerTab").click(function() {
-    if ($(this).hasClass("header--opened")) {
-      $(this).addClass("header--closed").removeClass("header--opened")
-      $("#headerImg").css({
+  $("#tabTop").click(function() {
+    if ($(this).hasClass("is-opened")) {
+      $(this).addClass("is-closed").removeClass("is-opened")
+      $("#tabElementTop").css({
         'top': "-250px"
       })
     } else {
-      $(this).removeClass("header--closed").addClass("header--opened")
-      $("#headerImg").css({
+      $(this).removeClass("is-closed").addClass("is-opened")
+      $("#tabElementTop").css({
         'top': "0px"
+      })
+    }
+  });
+  $("#tabRight").click(function() {
+    if ($(this).hasClass("is-opened")) {
+      $(this).addClass("is-closed").removeClass("is-opened")
+      $("#tabElementRight").css({
+        'right': "-250px"
+      })
+    } else {
+      $(this).removeClass("is-closed").addClass("is-opened")
+      $("#tabElementRight").css({
+        'right': "0px"
       })
     }
   });

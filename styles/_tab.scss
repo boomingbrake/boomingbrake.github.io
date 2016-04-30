@@ -6,7 +6,7 @@
   text-align:center;
   background-color: $yellow;
   color: $black;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   &:hover{
     color:$white;
   }
@@ -15,6 +15,11 @@
   }
   &.is-closed:after{
     content:"More";
+  }
+}
+@media (min-width:30em) {
+  .tab{
+      font-size: 1.5rem;
   }
 }
 
@@ -51,6 +56,9 @@
   padding: 1em;
   background-color: $white;
   border-radius: 0;
+  font-size: 1.5em;
+  min-width: 250px;
+  min-height: 60em;
   &.top{
     height:250px;
     border-bottom: .75em solid $yellow;
@@ -66,11 +74,42 @@
       width:250px;
       transition: right ease-out .4s;
   }
-  footer{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
+  .section__head, section,.tab-header{
+    display:none;
+  }
+  .section--always-display{
+    display:inline;
+  }
+  ul {
+    column-count: 1;
+  }
+
+  footer {
+      position: absolute;
+      text-align: center;
+      bottom: 1em;
+      font-size: .75em;
+      color: $basic-txt-color;
+      padding-top: 1em;
+      p {
+         margin-right: 2em;
+
+         img{
+           height: 1em;
+           width: 1em;
+         }
+     }
+  }
+}
+@media (min-width:30em) {
+  .tab__element{
+      font-size: 1em;
+      min-height: 35em;
+      .section__head, section,.tab-header{
+        display: inline-block;
+      }
+      ul {
+        column-count: 2;
+      }
   }
 }

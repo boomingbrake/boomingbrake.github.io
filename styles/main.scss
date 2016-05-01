@@ -16,11 +16,13 @@ body {
     font-family: 'Oswald', sans-serif;
     color: $basic-txt-color;
     background: $white;
-    min-height: 35em;
+    min-height: 35rem;
+    margin-bottom: 4rem;
 }
 main {
-    padding: 0 1em;
+    padding: 0 1rem;
 }
+
 
 a {
     text-decoration: none;
@@ -38,38 +40,42 @@ h3{
 section{
   padding:1em 0;
 }
+@media (min-width:30em) {
+  main{
+    padding: 0em 1rem;
+  }
+}
 .main__container{
-  max-width: 70em;
+  max-width: 70rem;
   margin:auto;
 }
 .main__head {
     width: 100%;
-    font-size: 6em;
+    font-size: 4rem;
     text-transform: uppercase;
-    text-align: center;
+    text-align: right;
     margin:0;
     color:$black;
-
+    padding-bottom: 4rem;
 }
 .main__head--sub{
   width: 100%;
-  font-size: 3em;
+  font-size: 3rem;
   text-transform: uppercase;
-  text-align: center;
-  margin:0;
+  text-align: left;
   color:$black;
 }
 @media (min-width:30em) {
-  .main__head {
-      font-size: 5em;
-      padding-top: 1em;
+  .main__head--sub{
+    text-align: center;
   }
+
 }
 .intro-text{
-  line-height: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  font-size: 1.5em;
+  line-height: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
 }
 .section__head {
     color: $title-txt-color;
@@ -77,32 +83,29 @@ section{
 }
 .section__container {
     display: inline-block;
-    font-size: 1.5em;
-    width: 16em;
-    padding: 1em;
+    font-size: 1.5rem;
     vertical-align: top;
-}
-.padding--top{
-  padding-top: .5em;
+    padding-right: 3.5em;
+    &.full{
+      width:100%
+    }
 }
 .social-icon {
     display: block;
-    height: 3.5em;
-    width: 3.5em;
+    height: 3.5rem;
+    width: 3.5rem;
     transition: fill .1s;
-    margin: .75em;
+    margin: .5em 0 0 0;
     fill: $black;
     &:hover{
       fill: $basic-txt-color;
     }
 }
-@media (min-width:30em) {
-  .intro-text,.section__container {
-      font-size: 1em;
-  }
+@media (min-width:48.3125em) {
   .social-icon {
-    height: 2.25em;
-    width: 2.25em;
+    display: inline-block;
+    height: 2.15rem;
+    width: 2.15rem;
   }
 }
 

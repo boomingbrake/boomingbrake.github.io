@@ -2,27 +2,19 @@ $(document).ready(function() {
   $("#tabTop").click(function() {
     if ($(this).hasClass("is-opened")) {
       $(this).addClass("is-closed").removeClass("is-opened")
-      $("#tabElementTop").css({
-        'top': "-250px"
-      })
+      $("#tabElementTop").addClass("is-closed").removeClass("is-opened")
     } else {
       $(this).removeClass("is-closed").addClass("is-opened")
-      $("#tabElementTop").css({
-        'top': "0px"
-      })
+      $("#tabElementTop").removeClass("is-closed").addClass("is-opened")
     }
   });
   $("#tabRight").click(function() {
     if ($(this).hasClass("is-opened")) {
       $(this).addClass("is-closed").removeClass("is-opened")
-      $("#tabElementRight").css({
-        'right': "-250px"
-      })
+        $("#tabElementRight").addClass("is-closed").removeClass("is-opened")
     } else {
       $(this).removeClass("is-closed").addClass("is-opened")
-      $("#tabElementRight").css({
-        'right': "0px"
-      })
+      $("#tabElementRight").removeClass("is-closed").addClass("is-opened")
     }
   });
 

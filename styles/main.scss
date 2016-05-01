@@ -85,7 +85,7 @@ section{
     display: inline-block;
     font-size: 1.5rem;
     vertical-align: top;
-    padding-right: 3.5em;
+    padding-right: 1.5rem;
     &.full{
       width:100%
     }
@@ -106,6 +106,9 @@ section{
     display: inline-block;
     height: 2.15rem;
     width: 2.15rem;
+  }
+  .section__container{
+    padding-right: 3rem;
   }
 }
 

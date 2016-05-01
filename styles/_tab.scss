@@ -3,10 +3,11 @@
 .tab{
   position:fixed;
   padding: .5rem;
+  font-size: 1.75rem;
   text-align:center;
   background-color: $yellow;
   color: $black;
-  font-size: 1.75rem;
+  cursor: pointer;
   &.is-opened:after{
     content:"Less";
   }
@@ -16,12 +17,12 @@
   &.top{
     border-radius:0 0 1rem 1rem;
     &.is-opened{
-      transition: top ease-out .4s;
       top: 250px;
+      transition: top ease-out .4s;
     }
     &.is-closed{
-      transition: top ease-out .4s;
       top: 0px;
+      transition: top ease-out .4s;
     }
   }
 
@@ -30,12 +31,12 @@
     bottom: 2rem;
     border-radius: 1rem 0 0 1rem;
     &.is-opened{
-      transition: right ease-out .4s;
       right: 250px;
+      transition: right ease-out .4s;
     }
     &.is-closed{
-      transition: right ease-out .4s;
       right: 0px;
+      transition: right ease-out .4s;
     }
 }
 }
@@ -49,15 +50,15 @@
 .tab__element{
   position:fixed;
   padding: 0 1rem;
-  background-color: $white;
   border-radius: 0;
+  background-color: $white;
   font-size: 1.5rem;
   &.top{
     height:250px;
-    border-bottom: .75rem solid $yellow;
-    transition: top ease-out .4s;
     top:-250px;
     width:100%;
+    border-bottom: .75rem solid $yellow;
+    transition: top ease-out .4s;
     &.is-opened{
         top:0;
     }
@@ -66,10 +67,10 @@
     }
   }
   &.right{
-      height:100%;
-      border-left: .75rem solid $yellow;
       top:0;
       right:-250px;
+      height:100%;
+      border-left: .75rem solid $yellow;
       width:250px;
       transition: right ease-out .4s;
       &.is-opened{
@@ -88,11 +89,11 @@
 
   footer {
       position: absolute;
-      text-align: center;
       bottom: 1rem;
-      font-size: .75rem;
-      color: $basic-txt-color;
       padding-top: 1rem;
+      color: $basic-txt-color;
+      font-size: .75rem;
+      text-align: center;
       p {
          margin-right: 2rem;
 
@@ -105,8 +106,8 @@
 }
 @media (min-width:30em) {
   .tab__element{
-      font-size: 1rem;
       min-height: 35rem;
+      font-size: 1rem;
       section,.tab-header{
         display: block;
       }

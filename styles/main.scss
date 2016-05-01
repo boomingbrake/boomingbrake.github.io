@@ -4,78 +4,73 @@ $basic-txt-color: #999999;
 $black: #000000;
 $yellow: #FFFF00;
 $white: #FFFFFF;
-
 @import 'tab';
-
 * {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Oswald', sans-serif;
-    color: $basic-txt-color;
-    background: $white;
     min-height: 35rem;
     margin-bottom: 4rem;
+    color: $basic-txt-color;
+    background: $white;
+    font-family: 'Oswald', sans-serif;
 }
 main {
     padding: 0 1rem;
 }
-
-
 a {
-    text-decoration: none;
     color: $header-txt-color;
-    &:hover{
-      color: $basic-txt-color;
+    text-decoration: none;
+    &:hover {
+        color: $basic-txt-color;
     }
 }
 ul {
     list-style: none;
 }
-h3{
-  margin-bottom:0;
+h3 {
+    margin-bottom: 0;
 }
-section{
-  padding:1em 0;
+section {
+    padding: 1em 0;
 }
 @media (min-width:30em) {
-  main{
-    padding: 0em 1rem;
-  }
+    main {
+        padding: 0 1rem;
+    }
 }
-.main__container{
-  max-width: 70rem;
-  margin:auto;
+.main__container {
+    max-width: 70rem;
+    margin: auto;
 }
 .main__head {
+  padding-bottom: 4rem;
     width: 100%;
+    margin: 0;
+    color: $black;
     font-size: 4rem;
     text-transform: uppercase;
     text-align: right;
-    margin:0;
-    color:$black;
-    padding-bottom: 4rem;
 }
-.main__head--sub{
-  width: 100%;
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-align: left;
-  color:$black;
+.main__head--sub {
+    width: 100%;
+    color: $black;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: left;
 }
 @media (min-width:30em) {
-  .main__head--sub{
-    text-align: center;
-  }
-
+    .main__head--sub {
+        text-align: center;
+    }
 }
-.intro-text{
-  line-height: 2rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2rem;
-  font-size: 1.5rem;
+.intro-text {
+    line-height: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
 }
 .section__head {
     color: $title-txt-color;
@@ -83,40 +78,39 @@ section{
 }
 .section__container {
     display: inline-block;
-    font-size: 1.5rem;
     vertical-align: top;
     padding-right: 1.5rem;
-    &.full{
-      width:100%
+    font-size: 1.5rem;
+    &.full {
+        width: 100%;
     }
 }
 .social-icon {
     display: block;
     height: 3.5rem;
     width: 3.5rem;
-    transition: fill .1s;
-    margin: .5em 3em 0;
+    margin: 0.5em 3em 0;
     fill: $black;
-    &:hover{
-      fill: $basic-txt-color;
+    transition: fill 0.1s;
+    &:hover {
+        fill: $basic-txt-color;
     }
 }
 @media (min-width:30em) {
-  .social-icon {
-    display: inline-block;
-    height: 2.15rem;
-    width: 2.15rem;
-    margin: .5em 0 0;
-  }
-  .section__container{
-    padding-right: 3rem;
-  }
+    .social-icon {
+        display: inline-block;
+        height: 2.15rem;
+        width: 2.15rem;
+        margin: 0.5em 0 0;
+    }
+    .section__container {
+        padding-right: 3rem;
+    }
 }
-
 .bounce:hover {
-      animation-duration: 1s;
-      animation-fill-mode: both;
-      animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: bounce;
 }
 @keyframes bounce {
     to {
@@ -126,6 +120,6 @@ section{
         transform: translateY(-10px);
     }
     from {
-      transform: translateY(0);
+        transform: translateY(0);
     }
 }

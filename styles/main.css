@@ -5,8 +5,6 @@
   background-color: #FFFF00;
   color: #000000;
   font-size: 1.75rem; }
-  .tab:hover {
-    color: #FFFFFF; }
   .tab.is-opened:after {
     content: "Less"; }
   .tab.is-closed:after {

@@ -7,9 +7,6 @@
   background-color: $yellow;
   color: $black;
   font-size: 1.75rem;
-  &:hover{
-    color:$white;
-  }
   &.is-opened:after{
     content:"Less";
   }

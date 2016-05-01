@@ -95,7 +95,7 @@ section{
     height: 3.5rem;
     width: 3.5rem;
     transition: fill .1s;
-    margin: .5em 0 0 0;
+    margin: .5em 3em 0;
     fill: $black;
     &:hover{
       fill: $basic-txt-color;
@@ -106,6 +106,7 @@ section{
     display: inline-block;
     height: 2.15rem;
     width: 2.15rem;
+    margin: .5em 0 0;
   }
   .section__container{
     padding-right: 3rem;

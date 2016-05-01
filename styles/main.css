@@ -177,7 +177,7 @@ section {
   .social-icon:hover {
     fill: #999999; }
 
-@media (min-width: 48.3125em) {
+@media (min-width: 30em) {
   .social-icon {
     display: inline-block;
     height: 2.15rem;

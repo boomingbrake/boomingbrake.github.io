@@ -24,7 +24,7 @@ a {
     color: $header-txt-color;
     text-decoration: none;
     &:hover {
-        color: $basic-txt-color;
+        color: $yellow;
     }
 }
 ul {
@@ -105,6 +105,7 @@ section {
         padding-right: 3rem;
     }
 }
+
 .bounce:hover {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -120,4 +121,13 @@ section {
     from {
         transform: translateY(0);
     }
+}
+.button {
+  padding: .5rem;
+  font-size: 1.75rem;
+  text-align:center;
+  border-radius: .85em;
+  border: none;
+  background-color: $yellow;
+  color: $black;
 }

@@ -109,7 +109,7 @@ a {
   color: #333333;
   text-decoration: none; }
   a:hover {
-    color: #999999; }
+    color: #FFFF00; }
 
 ul {
   list-style: none; }
@@ -212,3 +212,12 @@ section {
   from {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
+
+.button {
+  padding: .5rem;
+  font-size: 1.75rem;
+  text-align: center;
+  border-radius: .85em;
+  border: none;
+  background-color: #FFFF00;
+  color: #000000; }

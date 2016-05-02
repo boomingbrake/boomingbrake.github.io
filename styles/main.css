@@ -1,10 +1,11 @@
 .tab {
   position: fixed;
   padding: .5rem;
+  font-size: 1.75rem;
   text-align: center;
   background-color: #FFFF00;
   color: #000000;
-  font-size: 1.75rem; }
+  cursor: pointer; }
   .tab.is-opened:after {
     content: "Less"; }
   .tab.is-closed:after {
@@ -12,21 +13,21 @@
   .tab.top {
     border-radius: 0 0 1rem 1rem; }
     .tab.top.is-opened {
-      transition: top ease-out .4s;
-      top: 250px; }
+      top: 250px;
+      transition: top ease-out .4s; }
     .tab.top.is-closed {
-      transition: top ease-out .4s;
-      top: 0px; }
+      top: 0px;
+      transition: top ease-out .4s; }
   .tab.right {
     right: 0;
     bottom: 2rem;
     border-radius: 1rem 0 0 1rem; }
     .tab.right.is-opened {
-      transition: right ease-out .4s;
-      right: 250px; }
+      right: 250px;
+      transition: right ease-out .4s; }
     .tab.right.is-closed {
-      transition: right ease-out .4s;
-      right: 0px; }
+      right: 0px;
+      transition: right ease-out .4s; }
 
 @media (min-width: 48.3125em) {
   .tab {
@@ -35,24 +36,24 @@
 .tab__element {
   position: fixed;
   padding: 0 1rem;
-  background-color: #FFFFFF;
   border-radius: 0;
+  background-color: #FFFFFF;
   font-size: 1.5rem; }
   .tab__element.top {
     height: 250px;
-    border-bottom: 0.75rem solid #FFFF00;
-    transition: top ease-out .4s;
     top: -250px;
-    width: 100%; }
+    width: 100%;
+    border-bottom: 0.75rem solid #FFFF00;
+    transition: top ease-out .4s; }
     .tab__element.top.is-opened {
       top: 0; }
     .tab__element.top.is-closed {
       top: -250px; }
   .tab__element.right {
-    height: 100%;
-    border-left: 0.75rem solid #FFFF00;
     top: 0;
     right: -250px;
+    height: 100%;
+    border-left: 0.75rem solid #FFFF00;
     width: 250px;
     transition: right ease-out .4s; }
     .tab__element.right.is-opened {
@@ -65,11 +66,11 @@
     display: inline; }
   .tab__element footer {
     position: absolute;
-    text-align: center;
     bottom: 1rem;
-    font-size: .75rem;
+    padding-top: 1rem;
     color: #999999;
-    padding-top: 1rem; }
+    font-size: .75rem;
+    text-align: center; }
     .tab__element footer p {
       margin-right: 2rem; }
       .tab__element footer p img {
@@ -78,8 +79,8 @@
 
 @media (min-width: 30em) {
   .tab__element {
-    font-size: 1rem;
-    min-height: 35rem; }
+    min-height: 35rem;
+    font-size: 1rem; }
     .tab__element section, .tab__element .tab-header {
       display: block; } }
 
@@ -95,18 +96,18 @@
   padding: 0; }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  min-height: 35rem;
+  margin-bottom: 4rem;
   color: #999999;
   background: #FFFFFF;
-  min-height: 35rem;
-  margin-bottom: 4rem; }
+  font-family: 'Oswald', sans-serif; }
 
 main {
   padding: 0 1rem; }
 
 a {
-  text-decoration: none;
-  color: #333333; }
+  color: #333333;
+  text-decoration: none; }
   a:hover {
     color: #999999; }
 
@@ -121,27 +122,27 @@ section {
 
 @media (min-width: 30em) {
   main {
-    padding: 0em 1rem; } }
+    padding: 0 1rem; } }
 
 .main__container {
   max-width: 70rem;
   margin: auto; }
 
 .main__head {
+  padding-bottom: 4rem;
   width: 100%;
-  font-size: 4rem;
-  text-transform: uppercase;
-  text-align: right;
   margin: 0;
   color: #000000;
-  padding-bottom: 4rem; }
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: right; }
 
 .main__head--sub {
   width: 100%;
+  color: #000000;
   font-size: 3rem;
   text-transform: uppercase;
-  text-align: left;
-  color: #000000; }
+  text-align: left; }
 
 @media (min-width: 30em) {
   .main__head--sub {
@@ -159,9 +160,9 @@ section {
 
 .section__container {
   display: inline-block;
-  font-size: 1.5rem;
   vertical-align: top;
-  padding-right: 1.5rem; }
+  padding-right: 1.5rem;
+  font-size: 1.5rem; }
   .section__container.full {
     width: 100%; }
 
@@ -169,18 +170,16 @@ section {
   display: block;
   height: 3.5rem;
   width: 3.5rem;
-  transition: fill .1s;
-  margin: .5em 3em 0;
-  fill: #000000; }
+  margin: 0.5em 3em 0;
+  fill: #000000;
+  transition: fill 0.1s; }
   .social-icon:hover {
     fill: #999999; }
 
 @media (min-width: 30em) {
   .social-icon {
     display: inline-block;
-    height: 2.15rem;
-    width: 2.15rem;
-    margin: .5em 0 0; }
+    margin: 0.5em 1em 0; }
   .section__container {
     padding-right: 3rem; } }
 

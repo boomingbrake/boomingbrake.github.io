@@ -4,7 +4,7 @@ $basic-txt-color: #999999;
 $black: #000000;
 $yellow: #FFFF00;
 $white: #FFFFFF;
-@import 'tab';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -131,3 +131,23 @@ section {
   background-color: $yellow;
   color: $black;
 }
+
+.footer {
+    position: absolute;
+    bottom: 1rem;
+    padding-top: 1rem;
+    color: $basic-txt-color;
+    font-size: .75rem;
+    text-align: center;
+    .credit__txt {
+       margin-right: 2rem;
+
+       .credit__img{
+         height: 1rem;
+         width: 1rem;
+       }
+   }
+}
+
+@import 'tab';
+@import 'form';

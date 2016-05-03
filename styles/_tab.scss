@@ -1,5 +1,4 @@
 
-
 .tab{
   position:fixed;
   padding: .5rem;
@@ -87,22 +86,6 @@
     display:inline;
   }
 
-  footer {
-      position: absolute;
-      bottom: 1rem;
-      padding-top: 1rem;
-      color: $basic-txt-color;
-      font-size: .75rem;
-      text-align: center;
-      p {
-         margin-right: 2rem;
-
-         img{
-           height: 1rem;
-           width: 1rem;
-         }
-     }
-  }
 }
 @media (min-width:30em) {
   .tab__element{

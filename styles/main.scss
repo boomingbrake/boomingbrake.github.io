@@ -84,7 +84,7 @@ ul {
     fill: $black;
     transition: fill 0.1s;
     &:hover {
-        fill: $basic-txt-color;
+        fill: $yellow;
     }
 }
 @media (min-width:30em) {

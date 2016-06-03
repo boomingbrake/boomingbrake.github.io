@@ -63,6 +63,9 @@ ul {
   .section__container.full {
     width: 100%; }
 
+.related_work {
+  color: #333333; }
+
 .social-icon {
   display: inline-block;
   height: 3.5rem;

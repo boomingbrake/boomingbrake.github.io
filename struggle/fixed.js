@@ -19,13 +19,13 @@ function addElement () {
     //   }
     //   left = (left - (10 * moreThan10))
     // }
-    moreThan5 = isDivisible(left, 5);
-    if(moreThan5 >= 1){
-      for (var i = moreThan5; i > 0; i--) {
-       newDiv.appendChild(addImageContent("../images/struggle/5peaks.svg"));
-      }
-      left = (left - (5 * moreThan5))
-    }
+    // moreThan5 = isDivisible(left, 5);
+    // if(moreThan5 >= 1){
+    //   for (var i = moreThan5; i > 0; i--) {
+    //    newDiv.appendChild(addImageContent("../images/struggle/5peaks.svg"));
+    //   }
+    //   left = (left - (5 * moreThan5))
+    // }
     for (var i = left; i > 0; i--) {
       newDiv.appendChild(addImageContent("../images/struggle/peak.svg"));
     }
@@ -42,8 +42,9 @@ function isDivisible(a, b){
     return Math.floor(result);
 }
 function addImageContent(img){
+	var newDiv = document.createElement("div");
     var myImage = new Image();
     myImage.src = img;
-    myImage.className="peak"
-    return myImage;
+    myImage.className="peak";
+     return newDiv.appendChild(myImage);
 }

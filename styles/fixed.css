@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Blackout';
-  src:  url('Blackout Sunrise.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src:  url('Blackout Sunrise.ttf') /* Safari, Android, iOS */
 }
 
 body, html {
@@ -36,3 +36,8 @@ h1 {
 .peak:nth-child(odd) {
   margin-top: -90; 
 }
+.link {
+  color: #333333;
+  text-decoration: none; }
+  .link:hover {
+    color: #FFFF00; }

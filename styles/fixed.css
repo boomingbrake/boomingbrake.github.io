@@ -12,7 +12,7 @@ body, html {
 }
 header{
   text-align: center;
-  margin: 10em auto 6em auto;
+  margin: 10rem auto 6rem auto;
 }
 h1 {
   text-align:center;
@@ -22,15 +22,15 @@ h1 {
 }
 .banner{
   width:95%;
-  padding-bottom: 2em;
-  font-size:6em;
+  padding-bottom: 2rem;
+  font-size:6rem;
 }
 .peak{
-  max-height: 4em;
+  max-height: 6rem;
   position: relative;
 }
 .peak:nth-child(even) {
-    padding-left: 1.2em;
+    padding-left: 1.2rem;
     top:-45;
 }
 .peak:nth-child(odd) {

@@ -42,9 +42,8 @@ function isDivisible(a, b){
     return Math.floor(result);
 }
 function addImageContent(img){
-	var newDiv = document.createElement("div");
     var myImage = new Image();
     myImage.src = img;
-    myImage.className="peak";
-     return newDiv.appendChild(myImage);
+    myImage.className="peak"
+    return myImage;
 }

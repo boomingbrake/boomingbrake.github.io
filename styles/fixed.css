@@ -27,17 +27,14 @@ h1 {
 }
 .peak{
   max-height: 6rem;
-  position: relative;
-}
-.peak:nth-child(even) {
-    padding-left: 1.2rem;
-    top:-45;
-}
-.peak:nth-child(odd) {
-  margin-top: -90; 
 }
 .link {
   color: #333333;
   text-decoration: none; }
   .link:hover {
     color: #FFFF00; }
+.counter{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

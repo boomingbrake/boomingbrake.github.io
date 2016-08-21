@@ -9,26 +9,27 @@ function calcValues() {
 addElement();
 
 function addElement () { 
-    var countSection = document.createElement("section");
-    var header = document.createElement("h2");
+    var peakDiv = document.createElement("div");
+    peakDiv.className ="peaklife";
+    var header = document.createElement("h1");
     var headerContent = document.createTextNode("Countdown till Colorado:"); 
   		header.appendChild(headerContent);
-  		countSection.appendChild(header);
+  		peakDiv.appendChild(header);
 
-    countSection.className = "counter"
+   
     var left = calcValues();
   if(left > 0) { // at least one day left
     for (var i = left; i > 0; i--) {
-      countSection.appendChild(addImageContent("../images/struggle/peak.svg"));
+      peakDiv.appendChild(addImageContent("../images/struggle/peak.svg"));
     }
   }
   else{
   		var newContent = document.createTextNode("The struggle has started."); 
-  		countSection.appendChild(newContent);
+  		peakDiv.appendChild(newContent);
   }
-  var currentDiv = document.getElementById("main");
+  var currentDiv = document.getElementById("counter");
   var peakInfo = document.getElementById("peakInfo"); 
-  currentDiv.insertBefore(countSection, peakInfo); 
+  currentDiv.appendChild(peakDiv); 
 }
 
 function addImageContent(img){

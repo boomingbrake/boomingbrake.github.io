@@ -8,33 +8,55 @@ body, html {
   height:100%;
   margin:0;
   padding:0;
-  font-family: 'Blackout', 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
-header{
-  text-align: center;
-  margin: 10rem auto 6rem auto;
-}
+
 h1 {
   text-align:center;
   font-size:28px;
   font-weight:normal;
   color:#000000;
 }
-.banner{
-  width:95%;
-  padding-bottom: 2rem;
-  font-size:6rem;
+.white{
+  color:#FFFFFF;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/struggle/fixed_struggle.svg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about{
+  padding: 5em;
+  background-color:#000000;
+  color:#FFFFFF;
+}
+
 .peak{
   max-height: 6rem;
 }
+
 .link {
   color: #333333;
   text-decoration: none; }
   .link:hover {
     color: #FFFF00; }
-.counter{
+
+.counter {
+    padding:5em;
+}
+
+.peaklife{
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }

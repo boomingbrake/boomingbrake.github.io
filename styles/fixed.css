@@ -40,12 +40,12 @@ h1 {
 
 
 .section{
-  padding: 2em 1em;
+  padding: 3em 1em;
   background-color:#000000;
   color:#FFFFFF;
 }
 .section--white{
-   padding: 2em 1em;
+   padding: 3em 1em;
   background-color:#FFFFFF;
   color:#000000;
 }
@@ -70,3 +70,12 @@ h1 {
   justify-content: center;
   font-family: 'Monoton', cursive;
 }
+.mayan-logo{
+  padding:2em;
+}
+
+.donate{
+  font-size:34px;
+color:#FFFFFF;}
+  .donate:hover {
+    color: #FFFF00; }

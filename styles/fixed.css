@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'Blackout';
-  src:  url('Blackout Sunrise.ttf') /* Safari, Android, iOS */
-}
 
 body, html {
   width:100%;
@@ -38,13 +34,14 @@ h1 {
     background-size: 85% 85%;
 }
 
+
 .section{
   padding: 2em 1em;
   background-color:#000000;
   color:#FFFFFF;
 }
 .section--white{
-  padding: 5em;
+   padding: 2em 1em;
   background-color:#FFFFFF;
   color:#000000;
 }
@@ -67,4 +64,5 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  font-family: 'Monoton', cursive;
 }

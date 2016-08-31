@@ -20,7 +20,7 @@ function addElement () {
     var left = calcValues();
   if(left > 0) { // at least one day left
     for (var i = 1; i <= left; i++) {
-    	var peakImg = addImageContent("../images/struggle/peak.svg");
+    	var peakImg = addImageContent("images/struggle/peak.svg");
     	peakImg.title = i;
       peakDiv.appendChild(peakImg);
     }

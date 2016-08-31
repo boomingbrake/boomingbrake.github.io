@@ -32,13 +32,9 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 85% 85%;
-}
-@media only screen and (max-width: 320px) {
-
-.parallax {
-    background-size: 50%;
-}
-
+    -webkit-background-size:85% 85%;
+    -moz-background-size: 85% 85%;
+-o-background-size: 85% 85%;
 }
 
 

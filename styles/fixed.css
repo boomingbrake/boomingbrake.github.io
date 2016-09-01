@@ -56,10 +56,10 @@ h1 {
 }
 
 .fixedlink {
-  color: #FFFF00;
+  color: #333333;
  }
   .fixedlink:hover {
-    color: #333333; }
+    color: #FFFF00; }
 
 .counter {
     padding:5em;

@@ -12,7 +12,7 @@ function addElement () {
     var peakDiv = document.createElement("div");
     peakDiv.className ="peaklife";
     var header = document.createElement("h1");
-    var headerContent = document.createTextNode("Countdown till Colorado:"); 
+    var headerContent = document.createTextNode("Countdown to Colorado:"); 
   		header.appendChild(headerContent);
   		peakDiv.appendChild(header);
 

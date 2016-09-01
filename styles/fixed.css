@@ -41,12 +41,12 @@ h1 {
 
 
 .section{
-  padding: 2em 1em;
+  padding: 4rem 1rem 4rem 1rem;
   background-color:#000000;
   color:#FFFFFF;
 }
 .section--white{
-   padding: 2em 1em;
+   padding: 4rem 1rem 4rem 1rem;
   background-color:#FFFFFF;
   color:#000000;
 }
@@ -55,10 +55,10 @@ h1 {
   max-height: 6rem;
 }
 
-.link {
+.fixedlink {
   color: #333333;
-  text-decoration: none; }
-  .link:hover {
+ }
+  .fixedlink:hover {
     color: #FFFF00; }
 
 .counter {
@@ -74,6 +74,7 @@ h1 {
 
 .mayan{
   height: 25%;
+  padding: 1em;
 }
 .donate{
   font-weight: bold;
@@ -81,3 +82,6 @@ h1 {
   color: #FFFFFF; }
   .donate:hover {
     color: #FFFF00; }
+.bring{
+  width:75%;
+}

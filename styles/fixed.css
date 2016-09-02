@@ -98,3 +98,10 @@ h1 {
   width:75%;
   max-width: 300px;
 }
+
+@media screen and (orientation:portrait) {
+/* Style for portrait mode goes here */
+.strava{
+  display: none;
+}
+}
